@@ -1,0 +1,87 @@
+.Detail{
+    flex: 1;
+    overflow: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Detail::-webkit-scrollbar {
+    display: none;
+}
+.detaileduser{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid #dddddd35;
+}
+.detaileduser img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title img{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(17, 25, 40, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.photoitems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photodetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.photodetails img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.photodetails span{
+    font-size: 14px;
+    color: lightgray;
+    font-weight: 300;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(17, 25, 40, 0.3);
+    cursor: pointer;
+}
+button{
+    padding: 15px;
+    background-color: rgba(230, 74, 105, 0.553);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout{
+    padding: 10px;
+    background-color: #1a73eb;
+}

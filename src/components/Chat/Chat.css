@@ -1,0 +1,150 @@
+.Chat{
+    flex: 2;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid grey;
+}
+.userbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.userbar img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.texts span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.texts p{
+    font-size: 14px;
+    font-weight: 300;
+    color: grey;
+}
+.uicons{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+
+}
+.middle{
+    flex: 1;
+    padding: 20px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.middle::-webkit-scrollbar {
+    display: none;
+}
+.message{
+    max-width: 70%;
+    display: flex;
+    gap: 20px;
+}
+.message.own{
+    align-self: flex-end;
+}
+.Ownmessagetext p{
+    background-color: seagreen;
+    border-radius: 10px;
+    padding: 20px;
+    border: 10px;
+}
+.messagepic{
+   width: 30px !important;
+   height: 30px !important;
+   border-radius: 50% !important;
+   object-fit: cover !important;
+}
+.messagetext{
+    flex: 1;
+    display: flex;
+    background-color: rgba(17, 25, 40, 0.3);
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 5px;
+}
+.messagetext p{
+    padding: 20px;
+    background-color: rgba(17, 25, 40, 0.3);
+    border: 10px;
+}
+.message span{
+    font-size: 13px;
+}
+.message img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.bottom{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    gap: 10px;
+    justify-content: space-between;
+    border-top:1px solid grey;
+}
+.bottom input{
+    flex: 1;
+    padding: 10px;
+    background-color:rgba(17, 25, 40, 0.5);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.bottom input:disabled{
+    cursor: not-allowed;
+}
+
+.sendbtn{
+    background-color: #5183fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sendbtn:disabled{
+    background-color: #5183feb4;
+    cursor: not-allowed;
+}
+.emoji{
+    position: relative;
+}
+.picker{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
