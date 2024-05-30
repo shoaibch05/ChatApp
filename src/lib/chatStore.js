@@ -1,13 +1,13 @@
-import { create } from 'zustand'
+import { create } from 'zustand';
 import { useUserStore } from './userStore';
-
 
 export const useChatStore = create((set) => ({
   chatId: null,
   user: null,
   isCurrentUserBlocked: false,
   isReceiverUserBlocked: false,
-  changeChat: (chatId, user) => {
+  isChatroom: false, // New state to track if the current chat is a chatroom
+  changeChat: (chatId, user, isChatroom = false) => {
     const currentUser = useUserStore.getState().currentUser;
     // Check if current user is blocked 
     if (user.blocked.includes(currentUser.id)) {
@@ -16,6 +16,7 @@ export const useChatStore = create((set) => ({
         user: null,
         isCurrentUserBlocked: true,
         isReceiverUserBlocked: false,
+        isChatroom,
       });
     }
     // Check if receiver is blocked 
@@ -25,19 +26,19 @@ export const useChatStore = create((set) => ({
         user: user,
         isCurrentUserBlocked: false,
         isReceiverUserBlocked: true,
+        isChatroom,
       });
-    }
-    else {
+    } else {
       return set({
         chatId,
         user,
         isCurrentUserBlocked: false,
         isReceiverUserBlocked: false,
+        isChatroom,
       });
     }
   },
   changeBlock: () => {
     set((state) => ({ ...state, isReceiverBlocked: !state.isReceiverBlocked }));
   },
-
 }));

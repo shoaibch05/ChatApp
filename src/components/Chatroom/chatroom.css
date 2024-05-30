@@ -1,0 +1,91 @@
+
+.chatroom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .chatroom-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chatroom-list li:hover {
+    background-color: #628bef;
+    border-radius: 10px;
+  }
+  
+  .chatroom {
+    margin: 20px;
+  }
+  
+  .messages {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .message {
+    margin-bottom: 5px;
+  }
+  .roomlist{
+    margin: 10px;
+  }
+  .roomlist h2{
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    background-color:rgba(17, 25, 40, 0.6) ;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  .create-chatroom {
+    margin-top: 20px;
+  }
+  
+  .create-chatroom input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-chatroom button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-chatroom button:hover {
+    background-color: #218838;
+  }
+  .chatroom-squeeze{
+    width: 15vw;
+    margin: 20px;
+  }
